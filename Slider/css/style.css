@@ -1,0 +1,91 @@
+html{
+	background: #FFFFD8;
+}
+body{
+	padding: 100px 0px ;
+}
+img{
+	border-radius: 5px;
+}
+#sld_block{
+  width: 100%;
+  height: 501px;
+  border-radius: 10px;
+	background:  radial-gradient(circle at 650px 150px, #f9eec7, #ffb60f, #ffb60f);
+}
+
+#slider{
+	width: 470px;
+	height: 480px;
+	margin: auto;
+	border: 1px solid #ffb60f;
+	position: relative;
+	overflow: hidden;
+  top : 10px;
+}
+
+#check_form{
+  background-color: white;
+  width: 470px;
+  position: relative;
+  left: 694px;
+  overflow: hidden;
+  bottom: 469px;
+  height: 478px;
+}
+#slider *{
+	height: 100%;
+	top: 0;
+	position: absolute;
+}
+
+.slide{
+	width: 100%;
+}
+
+#next{
+	right: 2px;
+	background: url(../image/arrowBg.png) right center no-repeat
+}
+#prev{
+	left: 2px;
+	background: url(../image/arrowBg.png) center left no-repeat
+}
+#prev,#next{
+	z-index: 1;
+	width: 3%;
+	font-size: 28px;
+	cursor: pointer;
+}
+
+#prev:hover, #next:hover{
+
+}
+
+#cont{
+	width: 100%;
+	transition: all 2s ease-out;
+}
+
+#btn_radio div{
+	z-index: 999;
+	border : 2px solid rgba(255,255,255,.7);
+	border-radius: 20px ;
+	height: 8px;
+	width : 8px;
+	transition: all .7s ease-in-out;
+}
+
+#btn_radio{
+	top: 450px;
+	left: 140px;
+	cursor: pointer
+}
+
+.active{
+	background-color: #ffb60f;
+}
+
+.noactive{
+	background: rgba(0,0,0,.7)
+}
