@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app/route/main/main.css">
+    <link rel="stylesheet" href="bower_components/angular-xeditable/dist/css/xeditable.css">
+    <link rel="stylesheet" href="app/route/task/task.css">
+    <title>Ardas</title>
+</head>
+<body ng-app="ardasApp">
+<div ui-view=""></div>
+
+<!--Bower components start-->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-xeditable/dist/js/xeditable.js"></script>
+
+
+<!--Bower components end-->
+
+<!--Angular components start-->
+<script src="app/app.js"></script>
+<script src="app/route/main/main.js"></script>
+<script src="app/route/main/main.controller.js"></script>
+<script src="app/route/task/task.js"></script>
+<script src="app/route/task/task.controller.js"></script>
+
+</body>
+</html>

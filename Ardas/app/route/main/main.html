@@ -1,0 +1,24 @@
+<div>
+
+    <table class="table table-hover ">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Tags</th>
+            <th>Actual effort</th>
+            <th>Estimated effort</th>
+            <th>Due date</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="e in lists" ng-class="{priority:e.is_high_priority}" >
+            <td ng-click="getTask(e)">{{e.name}}</td>
+            <td ng-click="getTask(e)">{{e.tags.join(",")}}</td>
+            <td ng-click="getTask(e)">{{e.actual_effort}}</td>
+            <td ng-click="getTask(e)">{{e.estimated_effort}}</td>
+            <td ng-click="getTask(e)">{{e.due_date}}</td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
